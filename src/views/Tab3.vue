@@ -43,7 +43,7 @@
         <ion-list>
           <ion-item>
             <ion-label><strong>Settings</strong></ion-label>
-            <a href="/tabs/tab1">
+            <a href="/settings">
               <ion-icon :icon="arrowForwardOutline" size="large"></ion-icon>
             </a>
           </ion-item>

@@ -17,7 +17,7 @@
       <ion-card>
          <ion-card-header>
              <div class="ion-text-center">
-              <ion-card-title>Privacy</ion-card-title>
+              <ion-card-title>Settings</ion-card-title>
              </div>
              <br>
              
