@@ -15,6 +15,7 @@
           <ion-title size="large">Tab 2</ion-title>
         </ion-toolbar>
       </ion-header>
+      <ion-button click="presentAlert">Show Alert</ion-button>
       <ion-searchbar color="light" show-cancel-button="focus"></ion-searchbar>
         <ion-fab horizontal="end" vertical="bottom" slot="fixed">
         <ion-fab-button color="primary">
@@ -34,12 +35,12 @@
       </ion-fab>
       <ExploreContainer name="Tab 2 page" />
     </ion-content>
-    
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
   </ion-page>
 </template>
 
 <script>
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent,  } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, alertController  } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 import { add, arrowUpCircle, alertOutline, } from 'ionicons/icons';
 
@@ -52,7 +53,17 @@ export default  {
       arrowUpCircle,
       alertOutline,
     }
-  }
+  },
+  presentAlert() {
+      return alertController
+        .create({
+          header: 'Alert',
+          subHeader: 'Subtitle',
+          message: 'This is an alert message.',
+          buttons: ['OK'],
+        })
+        .then(a => a.present())
+    },
 }
 </script>
 

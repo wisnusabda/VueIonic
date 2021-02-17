@@ -64,8 +64,12 @@ export default {
   ion-tab-bar{
     
     
-    --background: rgb(216, 216, 216);
+    --background: rgb(232, 232, 232);
+
+    
     
     
   }
+
+ 
 </style>
