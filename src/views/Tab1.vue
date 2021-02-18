@@ -15,21 +15,21 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
       <ion-list>
         <ion-item>
-          <a href="/trending" slot="end">
-          <ion-chip color="danger" outline>
-            <ion-label>Trending</ion-label>
-            <ion-icon :icon="trendingUpSharp"></ion-icon>
-          </ion-chip>
-          </a> 
-          
-           <a href="/trending" slot="start">
+          <a href="/trending" slot="">
           <ion-chip color="primary" outline>
             <ion-label>Latest</ion-label>
             <ion-icon :icon="newspaperOutline"></ion-icon>
           </ion-chip>
           </a>
+          <a href="/trending" slot="start">
+          <ion-chip color="danger" outline>
+            <ion-label>Trending</ion-label>
+            <ion-icon :icon="trendingUpSharp"></ion-icon>
+          </ion-chip>
+          </a> 
         </ion-item>
       </ion-list>
     <ion-card>
